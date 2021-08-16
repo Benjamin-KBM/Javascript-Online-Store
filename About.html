@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>About</title>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/About.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="45" alt="" class="align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <div class="access">
+            <a href="Checkout.html" id="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a><span>0</span>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container h-100">
+      <div id="jquery-slideshow-container">
+
+        <ul id="jquery-slideshow">
+          <li style="background-image: url(img/g1.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g2.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g3.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g4.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g5.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g6.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g7.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g8.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g9.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g10.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g11.jpg);">
+
+
+            </a>
+          </li>
+          <li style="background-image: url(img/g12.jpg);">
+
+
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <script>
+    jQuery(function ($) {
+
+      let slider = $("#jquery-slideshow") 
+       let  item_width = slider.parent().outerWidth() 
+       let timer = null; // will reference the autoplay() timer
+
+     
+      $(window).on("resize", adjust);
+      adjust();
+
+      if (slider.children("li").length > 1) {
+
+        // Add previous/next buttons
+        slider.parent().append(
+          "<a href=\"#\" id=\"btn-prev\"><i class=\"fa fa-angle-left\"></i><span>Previous</span></a><a href=\"#\" id=\"btn-next\"><i class=\"fa fa-angle-right\"></i><span>Next</span></a>"
+          );
+
+        // Handle clicks on the next button
+        slider.parent().on("click", "a#btn-prev", function (e) {
+          e.preventDefault();
+
+          slider.children("li:last").prependTo(slider);
+          slider.css("left", -item_width);
+
+          slider.animate({
+            left: 0
+          }, 500, "swing");
+        });
+
+        // Handle clicks on the previous button
+        slider.parent().on("click", "a#btn-next", function (e) {
+          e.preventDefault();
+
+          slider.animate({
+            left: -item_width
+          }, 500, "swing", function () {
+            slider.children("li:first").appendTo(slider);
+            slider.css("left", 0);
+          });
+        });
+      }
+
+      // Autoplay
+      autoplay();
+
+      // Pause/resume autoplay on hover in/out
+      slider.hover(function () {
+        if (timer) {
+          clearInterval(timer);
+          timer = null;
+        }
+      }, function () {
+        autoplay();
+      });
+
+      // Helpers
+      function autoplay() {
+        if ($("a#btn-next").length) {
+          timer = setInterval(function () {
+            $("a#btn-next").trigger("click");
+          }, 5000);
+        }
+      }
+
+      function adjust() {
+        item_width = slider.parent().outerWidth();
+        slider.children("li").width(item_width).parent().width(item_width * slider.children("li").length);
+      }
+
+    });
+  </script>
+  <div class="container">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-12">
+        <h1 class="display-4 text-white mt-5 mb-2">About Us</h1>
+        <p class="lead mb-5 text-white-150">Baglism is overwhelmed to present you with a vast and variegated variety of
+          Handcrafted leather bags to choose from. Our assorted assemblage of leather accessories has been meticulously
+          crafted by the best leather craftsmen of Thailand.
+
+          Being a Global Brand, Baglism pledges to serve world class designs and premium quality leather bags aswell as
+          other materials to the customers. We always abide by our brand values – integrity, authenticity and
+          exclusivity.
+
+          We are committed to delivering an extensive selection of Leather bags for both men and women of superior
+          standards. Our collection ranges from messenger bags and briefcase to duffle bags, from satchels and totes to
+          handbags for women as well as a vast array of handmade leather bags to complement any occasion or mood.
+          Whether it’s for a casual brunch or a work meeting or if you are in search of a fashion or business styled
+          bag, Baglism is just the one-stop destination to fulfill your needs. Also, if you are hunting for that perfect
+          leather journal with vintage feels, then you are certainly at the right stop because we have a plethora of
+          handmade diaries from which you can pick the best one for yourself.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-light">
+    <div class="container">
+      <p class="m-0 text-center text-black-50"> &copy; Baglism & Co.</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+
+
+  <script src="store.js"></script>
+</body>
+
+</html>

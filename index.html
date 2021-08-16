@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Baglism-Home</title>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="45" alt="" class="align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <div class="access">
+            <a href="Checkout.html" id="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg></a><span>0</span>
+          </div>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-transparent py-5 mb-5">
+    <div class="d-flex justify-content-center">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12 align-items-center">
+
+          <img src="img/banner1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <script>
+    $(function () { // Dropdown toggle
+      $(window).on('load', function (){
+        $('.dropdown-toggle').hide();
+      })
+      $('.dropdown-toggle').click(function () {
+        $(this).next('.dropdown').slideToggle();
+      });
+
+      $(document).click(function (e) {
+        var target = e.target;
+        if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle'))
+        {
+          $('.dropdown').slideUp();
+        }
+      });
+    });
+  </script>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h1>View Our Shipping Polocies</h1>
+        <hr>
+        <a class="dropdown-toggle" title="Dropdown">
+          <h3>Ground Shipment</h3>
+        </a>
+        <ul class="dropdown">
+          <p>Free Shipping on orders over R122 - 2 to 7 business days</p>
+
+          <a class="dropdown-toggle" title="Dropdown">
+            <h3>3-Day Shipment</h3>
+          </a>
+          <ul class="dropdown">
+            <p> bulk items will incur an additional R19.95 per item per order - 3 business days for shipping</p>
+          </ul>
+          <br>
+          <a class="dropdown-toggle" title="Dropdown">
+            <h3>2-Day Shipment</h3>
+          </a>
+          <ul class="dropdown">
+            <p>bulk items will incur an additional R29.95 per order - for 2 business days shipping</p>
+          </ul>
+          <a class="dropdown-toggle" title="Dropdown">
+            <h3>Check and see which polocy applies</h3>
+          </a>
+          <ul class="dropdown">
+            <li>Polices for <a href="mailto:#">other US territories</a></li>
+            <li>Polices for <a href="mailto:#">international countries</a></li>
+            <li>view our <a href="mailto:#">APO/EPO Shipping information</a></li>
+          </ul>
+
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2>Contact Us</h2>
+        <hr>
+        <address>
+          <strong>location</strong>
+          <br>Chatuchak Night : 21 Lock123 Soi 6 : Platinum : Zone 3, 3rd Floor, Lock 320
+          <br>
+          <strong><abbr title="Phone">tell:</abbr></strong>
+          <br>+66 86 375 3235
+        </address>
+      </div>
+
+    </div>
+
+    <!-- Catalogue -->
+
+    <div class="row">
+      <!-- Tory Burch -->
+      <div class="col-md-4 mb-5" id="item1">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/tory_burch.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Tory Burch</h4>
+            <hr>
+            <h5 class="card-price">R360</h5>
+            <ul class="card-text">
+              <li>Scratch-resistant pebbled leather.</li>
+              <li>Interior zipper pocket and slip pocket.</li>
+              <li>Can hold a 7 inch tablet or device.</li>
+            </ul>
+            <br>
+            <br>
+            <button class="add-to-cart btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baglism backpack -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/baglism_backpack.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Baglism backpack</h4>
+            <hr>
+            <h5 class="card-price">R240</h5>
+            <ul class="card-text">
+              <li>Classic lightweight daypack design.</li>
+              <li>Adjustable webbing straps for a custom fit</li>
+              <li>Constructed in a durable polyester ripstop.</li>
+            </ul>
+            <button class="add-to-cart btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Burberry -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/burr_berry.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Burberry</h4>
+            <hr>
+            <h5 class="card-price">R250</h5>
+            <ul class="card-text">
+              <li>Adjustable straps.</li>
+              <li>Front zip pouch.</li>
+              <li>Lining: 100% polyamide</li>
+            </ul>
+            <br>
+            <button class="add-to-cart btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- Baglism Jansport -->
+      <div class="d-flex justify-content-center">
+        <div class="col-md-4 mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="img/baglism_jansport.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Baglism Jansport</h4>
+              <hr>
+              <h5 class="card-price">R650</h5>
+              <ul class="card-text">
+                <li>Adjustable shoulder straps for custom carry.</li>
+                <li>Interior zippered mesh pocket for specialized storage.</li>
+                <li>Security zipper at back panel for hidden storage.</li>
+              </ul>
+              <button class="add-to-cart btn-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Baglism pack -->
+        <div class="col-md-4 mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="img/baglism_pack.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Baglism pack</h4>
+              <hr>
+              <h5 class="card-price">R122</h5>
+              <ul class="card-text">
+                <li>Adjustable crossbody strap.</li>
+                <li>Spot clean.</li>
+                <li>100% TPU.</li>
+              </ul>
+              <br>
+              <br>
+              <button class="add-to-cart btn-primary">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Catalogue -->
+
+  </div>
+
+
+  <div class="container py-5">
+    <div class="row py-5">
+      <div class="col-12 text-center">
+        <h2 class="mb-2 h1 font-weight-bold">Testimonals</h2>
+        <p class="mb-5 text-black-50">A word from happy clients.</p>
+        <div class="row pt-3">
+          <div class="col-lg-4 col-md-6 vv">
+            <div class="p-4 border-light border rounded cc">
+              <div class="d-flex justify-content-center align-items-center border rounded-circle box-100 mx-auto">
+                <img src="img/profile2.jpeg" alt="" style="border-radius: 50% ; height: 100px;">
+              </div>
+
+              <p style="font-style: italic;">"Great product,absoulty love their bags "</p>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 vv">
+            <div class="p-4 border-light border rounded cc">
+              <div class="d-flex justify-content-center align-items-center border rounded-circle box-100 mx-auto">
+                <img src="img/profile1.jpeg" alt="" style="border-radius: 50% ; height: 100px;">
+              </div>
+
+              <p style="font-style: italic;">"functional and stylish, keep up the great work thanks"</p>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 vv">
+            <div class="p-4 border-light border rounded cc">
+              <div class="d-flex justify-content-center align-items-center border rounded-circle box-100 mx-auto">
+                <img src="img/profile1.jpg" alt="" style="border-radius: 50% ; height: 100px;">
+              </div>
+
+              <p style="font-style: italic;">"Im make sure that everbody knows where I got this bag from"</p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-light">
+    <div class="container">
+      <p class="m-0 text-center text-black-50"> &copy; Baglism & Co.</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+  <script src="store.js"></script>
+</body>
+
+</html>

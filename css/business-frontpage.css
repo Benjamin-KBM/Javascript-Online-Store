@@ -1,0 +1,196 @@
+/*!
+ * Start Bootstrap - Business Frontpage (https://startbootstrap.com/template/business-frontpage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+  font-family: 'Barlow', sans-serif;
+  background-image: linear-gradient(white,rgb(153, 150, 150));
+  
+}
+
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+.box-100{
+  transition:all 0.3s ease;
+  cursor:pointer;
+  box-shadow: 0px 0px 2px 6px rgba(0, 0, 0, 0.03);
+  width: 100px;
+  height: 100px;
+  color:#fff;
+  background-color: #e34c43;
+  border-radius: 100px;        
+  }
+  .box-100 i{
+  font-size:26px;    
+  }
+  
+ 
+  .add-to-cart {
+      padding: 14px 26px;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+  }
+  .headingsmall {
+    font-family: 'Great Vibes', cursive;
+    color: #521e1e;
+}
+.headingbig {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.add-to-cart {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.add-to-cart:hover {
+
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+    
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+.cartImg{
+  width: 200px;
+}
+.headingTop {
+  border-top: 1px solid black;
+}
+
+.heading {
+  border-bottom: 1px solid black;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.cartContainer {
+  margin-top: 4rem;
+  font-size: 3rem;
+  text-align: center
+}
+
+.cartContainer img {
+  width: 100px!important;
+  height: 100px!important;
+}
+.cart-row{
+  justify-content: space-evenly;
+}
+
+.access a{
+  color: rgb(73, 73, 70);
+  font-size: 20px;
+  padding:0 10px;
+}

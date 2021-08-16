@@ -1,0 +1,49 @@
+#jquery-slideshow-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+#jquery-slideshow-container #jquery-slideshow {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#jquery-slideshow-container #jquery-slideshow li {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#jquery-slideshow-container #jquery-slideshow li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    transition: color 0.2s ease-in;
+}
+#jquery-slideshow-container #jquery-slideshow li a:hover {
+    color: #ef233c;
+}
+ 
+    /* Position our caption at the bottom right corner of the slide */
+    #jquery-slideshow-container #jquery-slideshow li a span {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0.75em 1.5em;
+        font-size: 1.3em;
+        background: #000000; /* fallback for old browsers */
+        background: rgba(0, 0, 0, 0.8);
+    }

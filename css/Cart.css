@@ -1,0 +1,103 @@
+
+/* check out page */
+
+#products-container ion-icon{
+    font-size: 50;
+    color: darkblue;
+    margin-left: 10;
+    margin-right: 10;
+    cursor: pointer;
+  }
+  #products-container{
+    max-width: 850px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+  
+  }
+  
+  #product-header{
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom:4px solid lightseagreen;
+    margin: 0 auto;
+  }
+ 
+  
+  #price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    
+  }
+  #price-title{
+    width:25%;
+  }
+
+  #quantity{
+    width: 30%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  #quantity-title{
+    width:15%;
+  }
+
+  #total{
+    width: 10%;
+    display: flex;
+    /* align-items: center; */
+    
+  }
+  #total-title{
+    width:15%;
+  }
+ 
+  #product{
+    width: 45%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom:1px solid lightseagreen;
+  }
+  #product{
+    cursor: pointer;
+  }
+  #product-title{
+    width:45%;
+  }
+ 
+  #products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;
+    
+}
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+.basketTotalTitle{
+  width:30%;
+}
+.basketTotal{
+  width:10%;
+}
+#dilivery-title{
+  cursor: pointer;
+}
+.account{
+  cursor: pointer;
+}
+.confirm{
+  display:block;
+   width:100px;
+   margin:0 auto;
+   padding-bottom:5%;
+}
