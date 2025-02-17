@@ -1,14 +1,13 @@
-# Capstone Project ||
+# Baglism
 
-# Project Description
-The aim  of this project was to is to elevate my javascript, CSS and HTML skills.
-The main focus of this project adding on Capstone project one is to add background functionality and animations to the site
-producing a working online store.
+# Description
+Is a mock platform where users can buy bags.
 
-# Table of Contents
- 1. Proiject Description
- 1. Table of Contents
- 1. Usage Section
+# Built With
+* HTML
+* CSS
+* Javascript
+
 
 # Usage Section
 ![Screenshot from 2021-08-17 15-32-29](https://user-images.githubusercontent.com/73422921/129800531-7e76c23c-248b-4485-b331-8388a89c9d32.png)
